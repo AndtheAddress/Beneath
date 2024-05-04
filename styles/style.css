@@ -1,0 +1,39 @@
+#input {
+  width: 60%;
+  display: block;
+  padding: 0.5rem;
+  min-height: 2rem;
+  margin: auto;
+  outline: 1px solid #ccc;
+  border-radius: 8px;
+}
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0.6;
+}
+
+.image-container img {
+  width: 20%;
+  height: auto;
+  box-sizing: border-box;
+  transition: filter 0.3s;
+}
+.image-container img:hover {
+  filter: brightness(70%);
+}
+
+/*
+.image-container img.selected {
+  border: 4px solid gold;
+}
+*/
