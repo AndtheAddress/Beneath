@@ -55,7 +55,7 @@ function pray(sentence) {
     let subString = subArray.join("");
     load1.push(subString);
   }
-  let prayer = load1.join("\u200b");
+  let prayer = load1.join("\u0300");
   prayer += `${whichGod[godSeq]}！！！`;
   return prayer;
 }
@@ -63,7 +63,7 @@ function pray(sentence) {
 
 function depray (prayer) {
   prayer = prayer.slice(0,-5);
-  let bigArray = prayer.split("\u200b");
+  let bigArray = prayer.split("\u0300");
   let load2 = [];
   for (let charSeries of bigArray) {
     let subArray = [];
